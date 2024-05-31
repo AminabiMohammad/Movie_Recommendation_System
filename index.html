@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CB Movie Recommender</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:300,500&amp;display=swap'>
+<style>
+:root{
+  background-color: #DC143C;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin-top: 15vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  line-height: 1.5;
+  color: #000;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 8px;
+}
+@media (min-width: 32rem) {
+  body {
+    font-size: 102.5%;
+  }
+    .movie{
+    margin-right: 25vh;
+    margin-left: 25vh;
+  }
+}
+@media (min-width: 54rem) {
+  body {
+    font-size: 105%;
+  }
+}
+@media (min-width: 65rem) {
+  body {
+    font-size: 107.5%;
+  }
+}
+@media (min-width: 75em) {
+  body {
+    font-size: 110%;
+  }
+}
+@media (min-width: 91rem) {
+  body {
+    font-size: 115%;
+  }
+}
+@media (min-width: 115rem) {
+  body {
+    font-size: 120%;
+  }
+}
+@media (min-width: 130rem) {
+  body {
+    font-size: 125%;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.movie{
+    display: block;
+    text-align: center;
+}
+#movie_name{
+    width: 70%;
+    padding: 1em;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid grey;
+}
+#submission_button{
+    width: 25%;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 5px;
+    color: white;
+    background-color:rgb(25, 139, 253);
+    border-style: none;
+}
+@media screen and (max-width:600px) {
+    .movie{
+        padding-top: 11vh;
+        padding-bottom: 11vh;
+    }
+}
+h2{
+  text-align: center;
+}
+.creds{
+  margin-left: 26vh;
+  margin-top: 1vh;
+}
+</style>
+</head>
+<body>
+
+    <h2><u>Content Based Movie Recommendation System</u></h2>
+    <div class="movie">
+        <form action="{{ url_for('main') }}" method="POST">
+            <input type="text" id="movie_name" name="movie_name" placeholder="Enter a full movie name" autocorrect="off" autocapitalize="off" required />
+            <input type="submit" id="submission_button" value="Submit"/>
+            <input type="reset" id="submission_button" value="Reset"/>
+        </form>
+  </div>
+  <p class="creds">Type the similar movies you want to find</p>
+  <script src='https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js'></script>
+
+</body>
+</html>
