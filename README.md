@@ -22,3 +22,14 @@ scikit-learn documentation: TF-IDF Vectorizer and Cosine Similarity
 
 JavaScript Code:
 The JavaScript code in notfound.html executes when the user enters an invalid movie name. This code returns movie titles similar to the input, if applicable. The entered data is checked against all existing movie names to find the most similar ones. Since no packages are used, a dictionary stores terms for vectorizing purposes, and several functions compute the TF-IDF and Cosine Similarity values.
+
+Activate environment and install requirements:
+1.)python -m venv venv
+.\venv\scripts\activate
+python -m pip install -r requirements.txt 
+
+
+2.)Run Flask app:
+set FLASK_APP=app.py
+set FLASK_ENV=development
+flask run
