@@ -12,9 +12,6 @@ The feature extraction method used in this recommender is Term Frequency-Inverse
 Distance Metric:
 The distance metric used in this recommender is Cosine Similarity. Cosine Similarity measures the cosine of the angle between two vectors projected in a multidimensional vector space. It considers non-binary vector values, focusing on the contents of the items and disregarding their size, making it suitable for text documents with different word counts.
 
-Code Snippets:
-Two code snippets demonstrate the use of TF-IDF and Cosine Similarity in generating recommendations.
-
 Python Code:
 The Python code in app.py generates a list of movie recommendations based on a valid movie name entered by the user. If the entered movie name matches one in the dataset, recommendations are generated according to the 'soup' column (all details concatenated into one string) of each movie. This code uses the TF-IDF Vectorizer and Cosine Similarity functions imported from the "scikit-learn" package.
 
