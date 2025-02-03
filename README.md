@@ -2,7 +2,7 @@
 
 ## **📚 Project Overview**
 
-The **Movie Recommendation System** uses **Content-Based Filtering (CB)** to recommend movies based on user preferences. Built with **Python** and **JavaScript**, the system leverages **TF-IDF (Term Frequency-Inverse Document Frequency)** for feature extraction and **Cosine Similarity** for calculating the similarity between movies.
+This project **Movie Recommendation System** uses **Content-Based Filtering (CB)** to recommend movies based on user preferences. Built with **Python** and **JavaScript**, the system leverages **TF-IDF (Term Frequency-Inverse Document Frequency)** for feature extraction and **Cosine Similarity** for calculating the similarity between movies.
 
 ## **💡 Features**
 
@@ -27,9 +27,3 @@ The **Movie Recommendation System** uses **Content-Based Filtering (CB)** to rec
 
 - **Feature Extraction (TF-IDF):** Converts text-based information into a vector form to represent documents. This method is used to create a "soup" of features for each movie.
 - **Cosine Similarity:** Measures the similarity between two vectors by calculating the cosine of the angle between them, helping identify similar movies.
-
-## **🚀 Installation & Setup**
-
-### 1. Clone the Repository:
-```bash
-git clone https://github.com/your-repository/movie-recommendation-system.git
